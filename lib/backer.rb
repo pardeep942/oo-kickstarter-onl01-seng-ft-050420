@@ -1,5 +1,6 @@
-lass Backer
-  attr_accessor :name, :backed_projects
+class Backer
+attr_reader :name, :backed_projects
+
 
   def initialize(name)
     @name = name
@@ -9,7 +10,8 @@ lass Backer
   def back_project(project)
     @backed_projects << project
     project.backers << self
-
   end
 
-end 
+
+
+end
